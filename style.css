@@ -1,0 +1,99 @@
+.navbar {
+    /* background-color: #6b6054; */
+    background-color: rgba(83, 45, 4, 1);
+}
+.navbar-brand {
+    font-family: 'Satisfy', cursive;
+    color: white;
+}
+
+.mainHeader {
+    font-family: 'Satisfy', cursive;
+    /* font-family: 'Lora', serif; */
+    text-align: center;
+}
+
+.active {
+    /* font-style: italic; */
+    color: #929487;
+}
+
+.mainP {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Satisfy', cursive; */
+    text-align: center;
+}
+
+.nav-item:hover {
+    background-color: #929487;
+}
+
+a:active {
+    color: red;
+}
+
+.card {
+    background-color: rgba(83, 45, 4, 0.75);
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: solid rgb(61, 32, 1);;
+    /* box-shadow: -5px 5px 17px 9px rgba(97,92,92,0.62);
+-webkit-box-shadow: -5px 5px 17px 9px rgba(97,92,92,0.62);
+-moz-box-shadow: -5px 5px 17px 9px rgba(97,92,92,0.62); */
+}
+.card-body p {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+    font-style: italic;
+    color: aliceblue;
+}
+
+/* .card:hover {
+    background-color: #929487;
+
+    display:block;
+    transform: scale(1.1);
+    transform-style:flat;
+    transition-delay: 0.4s;
+    transition-duration: 0.8s;
+    z-index: 5;
+
+}
+
+
+.card-title {
+    color: rgb(221, 208, 189);
+    /* color: #ffcf88; */
+    font-size: 20px;
+    text-align: center;  
+    font-family: 'Lora', serif;  
+    
+}
+
+.card-subtitle {
+    font-family: 'Satisfy', cursive;
+}
+
+/* .card-text  { */
+    /* font-family: 'Poppins', sans-serif;} */
+
+h4 {
+    /* color: #ff9b08; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.imgWidth{
+    width: 50%;
+    height: auto;
+}
+
+
+.btn-secondary {
+    background-color: rgba(83, 45, 4, 1);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(0, 0, 0, 0.493);
+}
