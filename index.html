@@ -18,9 +18,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&family=Satisfy&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,200&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,200&family=Satisfy&display=swap" rel="stylesheet"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +38,7 @@
     
 
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid-xl d-flex align-item-right">
           <a class="navbar-brand fs-3 fw-bold ps-4" href="#"><i class="bi bi-cup-hot-fill pe-4"></i>Take a Break</a>
@@ -51,7 +51,7 @@
                 <a class="nav-link active fw-bold fs-4" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white fw-bold fs-4" href="#">Menu</a>
+                <a class="nav-link text-white fw-bold fs-4" href="#menu">Menu</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white fw-bold fs-4" href="#">Specials</a>
@@ -60,7 +60,7 @@
                 <a class="nav-link text-white fw-bold fs-4" href="#">Events</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white fw-bold fs-4" href="#">Chefs</a>
+                <a class="nav-link text-white fw-bold fs-4" href="#chefs">Chefs</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white fw-bold fs-4" href="#">Gallery</a>
@@ -213,6 +213,7 @@
                     <!-- end of card -->
                     <br>
             <!-- CAFE MENU -->
+<div id="menu">
     <div class="container pt-5">
         <h1 class="mainHeader">Check our tasty Menu</h1>
                 <br>
@@ -297,9 +298,11 @@
         </div>
         <!-- container end -->
     </div>
+  </div>
 
                 <br><br>
                 <!-- Team -->
+<div id="chefs">
     <div class="container">
         <h1 class="mainHeader">Meet Our Team</h1>
                 <br>
@@ -357,16 +360,7 @@
             </div>
            
         </div>
-
-        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <p>Try scrolling the rest of the page to see this option in action.</p>
-          </div>
-        </div>
+      </div>
          <!-- end of container -->
          <br>
          <footer class="container row">
