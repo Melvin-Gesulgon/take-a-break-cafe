@@ -28,7 +28,9 @@
     background-color: #929487;
 }
 
-a:active {
+.ul li:hover {background: #555;}
+
+.a:active {
     color: red;
 }
 
