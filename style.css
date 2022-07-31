@@ -38,10 +38,10 @@
     background-color: rgba(83, 45, 4, 0.75);
     margin-top: 2px;
     margin-bottom: 2px;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 1px;
+    margin-right: 1px;
     max-width:400px;
-    border: solid rgb(61, 32, 1);
+    /* border: solid rgb(61, 32, 1); */
     /* box-shadow: -5px 5px 17px 9px rgba(97,92,92,0.62);
 -webkit-box-shadow: -5px 5px 17px 9px rgba(97,92,92,0.62);
 -moz-box-shadow: -5px 5px 17px 9px rgba(97,92,92,0.62); */
@@ -79,12 +79,14 @@
 
 .card-text  {
     font-family: 'Poppins', sans-serif;}
+    
 
 h4 {
     
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: bolder;
+    align-items: center;
 }
 
 .imgWidth{
@@ -100,3 +102,9 @@ h4 {
 .btn-secondary:hover {
     background-color: rgba(0, 0, 0, 0.493);
 }
+
+            /* checkout page classes */
+
+.btn-group-vertical>.btn:not(:first-child),.btn-group-vertical>.btn-group:not(:first-child) {
+            margin-top: 0;
+            }
