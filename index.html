@@ -18,9 +18,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&family=Satisfy&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,200&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,200&family=Satisfy&display=swap" rel="stylesheet"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,7 +72,8 @@
                 <a class="nav-link text-white fw-bold fs-4" href="#">About</a>
               </li>
             </ul>
-            <button type="button" class="btn fs-2 nav-item"><i class="bi bi-cart nav-link text-white"></i></button>
+            <button type="button" class="btn fs-2 nav-item" ><i class="bi bi-cart nav-link text-white"></i></button>
+            
           </div>
         </div>
       </nav>
@@ -154,17 +155,12 @@
                     <!-- <h6 class="card-subtitle mb-2 fs-3 fw-bold">Card subtitle</h6> -->
                     <br>
                     <p class="card-text">Get the most from a variety of hot and cold coffee drinks, carefully and hygienically prepared.</p>
-                    <button type="button" class="btn btn-secondary" href="#">Kape pa more</button>
-
                 </div>
-                <div class="card-footer"><button class="button" href="">Kape pa more</button></div>
+                <div class="card-footer">
+                  <button class="button btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target= "#coffeeModal">Kape pa more</button>
+                </div>
             </div>
-
-            <div class="card col-md-4">
-
-
             <div class="card col-md-4 gx-5">
-
                     <div class="card-body ">
                       <div class="row flex-row flex-wrap">
                         <div class="d-flex imgWidth">
@@ -184,14 +180,13 @@
                     <!-- <br> -->
                     <!-- <h6 class="card-subtitle mb-2 fs-3 fw-bold">Card subtitle</h6> -->
                     <br>
-                    <p class="card-text">The quick brown fox jumped over the lazy dog under the log.</p>
+                    <!-- <p class="card-text">The quick brown fox jumped over the lazy dog under the log.</p> -->
                     <p class="card-text">Are you ready to stimulate your palate? Indulge in our delectable meals to satisfy your cravings.</p>
-                    <button type="button" class="btn btn-secondary" href="#">Hukad pa more</button>
-
                 </div>
-                <div class="card-footer"><button class="button" href="">Hukad pa more</button></div>
+                <div class="card-footer">
+                  <button class="button btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target= "#breakfastModal">Hukad pa more</button>
+                </div>
             </div>
-
             <div class="card col-md-4 gx-5">
                     <div class="card-body ">
                       <div class="row flex-row flex-wrap">
@@ -214,14 +209,253 @@
                     <br>
                     <p class="card-text">From Fruit Shakes, smoothies and Juice to Halo-halo and cocktails to Iced Tea and Coca-cola; 
                       you can have them all to brigthen up your day. </p>
-
-                    <button type="button" class="btn btn-secondary" href="#">Shake pa more</button>
-
                 </div>
-                <div class="card-footer"><button class="button" href="">Shake pa more</button></div>
+                <div class="card-footer">
+                  <button class="button btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target= "#refreshmentsModal">Shake pa more</button>
+                </div>
             </div>
         </div>
+  </div>
+   <!-- Modal for coffee cards -->
+   <div class="modal fade" role="dialog" id="coffeeModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Please select your favorites!</h5>
+          <div class="btn btn-close" data-bs-dismiss="modal"></div>
+        </div>
+        <div class="modal-body" style="height:600px; overflow-y: scroll;">
+          
+          <!-- Cards for checkout -->
+          <div class="modalCard">
+            <img src="img/coffee-cappuccino200px.jpg" class="modalImage">
+            <p></p>
+            <h3>Cappuccino</h3>
+            <p class="modalText">A blend of three equal parts of espresso, milk and milk foam.</p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+
+          <div class="modalCard">
+            <img src="img/coffee_mocha_cafe.jpg" class="modalImage">
+            <p></p>
+            <h3>Mocha Cafe</h3>
+            <p class="modalText">A mixture of espresso, milk, chocolate syrup, whipped cream and choco shavings</p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+
+          <div class="modalCard">
+            <img src="img/coffee_blackcoffee200px.png" class="modalImage">
+            <p></p>
+            <h3>Black Coffee</h3>
+            <p class="modalText">As its name implies, it's a brew of pure coffee from high quality Arabica coffee beans.</p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+
+          <div class="modalCard">
+            <img src="img/coffee_americano.jpg" class="modalImage">
+            <p></p>
+            <h3>Cafe Americano</h3>
+            <p class="modalText">An espresso that has extra water added to it. Ideal for people who wants more with less strength</p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+
+          <div class="modalCard">
+            <img src="img/coffee_espresso-macchiato.jpg" class="modalImage">
+            <p></p>
+            <h3>Cafe Macchiato</h3>
+            <p class="modalText">Popular around the world, this coffee drink is a blend of espresso and untextured steamed milk.</p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+
+          <div class="modalCard">
+            <img src="img/coffee_iced-dalgona200px.jpg" class="modalImage">
+            <p></p>
+            <h3>Iced Dalgona</h3>
+            <p class="modalText">Originated in South Korea, just instant coffee, water and sugar is all it takes to make this creamy whipped toppings on iced milk. </p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+          <!-- End of Cards for checkout -->
+        </div>
+        
+        <div class="modal-footer">
+          <button class="btn  btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
    </div>
+   <!-- End of Modal for coffee cards -->
+   <!-- Modal for Breakfast cards -->
+   <div class="modal fade" role="dialog" id="breakfastModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Please select your favorites!</h5>
+          <div class="btn btn-close" data-bs-dismiss="modal"></div>
+        </div>
+        <div class="modal-body" style="height:600px; overflow-y: scroll;">
+          
+          <!-- Modal for checkout -->
+          <div class="modalCard">
+            <img src="img/Pancit.jfif" class="modalImage">
+            <p></p>
+            <h3>Pancit Guisado</h3>
+            <p class="modalText">Mixed with seafood and topped with spring onions. Ingredients may vary from region to region but the dish is very popular throughout the philippines.</p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+
+          <div class="modalCard">
+            <img src="img/Tapsilog.jfif" class="modalImage">
+            <p></p>
+            <h3>Tapsilog</h3>
+            <p class="modalText">Fried - lightly dried thin slice of beef meat mixed with ingredients and glazed with syrup or honey paired with fried riced and sunny side fried egg.</p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+
+          <div class="modalCard">
+            <img src="img/Longsilog.jfif" class="modalImage">
+            <p></p>
+            <h3>Longsilog</h3>
+            <p class="modalText">Fried Longanesa with fried rice and fried sunny side up egg.</p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+
+          <div class="modalCard">
+            <img src="img/Bangsilog.jpeg" class="modalImage">
+            <p></p>
+            <h3>Bangsilog</h3>
+            <p class="modalText">Mixed with seafood, topped with spring onions</p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+
+          <div class="modalCard">
+            <img src="img/BreadandBeacon.jfif" class="modalImage">
+            <p></p>
+            <h3>Bread and Beacon</h3>
+            <p class="modalText">Bread and Beacon makes this light meal best if you don't want to get heavy.</p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+
+          <div class="modalCard">
+            <img src="img/Checksilog.jfif" class="modalImage">
+            <p></p>
+            <h3>Chicksilog</h3>
+            <p class="modalText">Fried Chicken leg paired with fried rice and fried egg.</p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+          <!-- End of Cards for checkout -->
+        </div>
+        
+        <div class="modal-footer">
+          <button class="btn  btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+   </div>
+   <!-- End of Modal for Breakfast cards -->
+   <!-- Modal for Refreshments cards -->
+   <div class="modal fade" role="dialog" id="refreshmentsModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Please select your favorites!</h5>
+          <div class="btn btn-close" data-bs-dismiss="modal"></div>
+        </div>
+        <div class="modal-body" style="height:600px; overflow-y: scroll;">
+          
+          <!-- Modal for checkout -->
+          <div class="modalCard">
+            <img src="img/Smoothie_Layersofhappiness.jfif" class="modalImage">
+            <p></p>
+            <h3>Layers of Happiness</h3>
+            <p class="modalText">Layers of Happiness brings the fullness of </p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+
+          <div class="modalCard">
+            <img src="img/HalohaloBeatTheHeat.jfif" class="modalImage">
+            <p></p>
+            <h3>Halo-halo</h3>
+            <p class="modalText">Halo-halo beat the heat</p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+
+          <div class="modalCard">
+            <img src="img/KiwiFruitShake.jfif" class="modalImage">
+            <p></p>
+            <h3>Kiwi Fruit Shake</h3>
+            <p class="modalText">A choice of different fruits</p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+
+          <div class="modalCard">
+            <img src="img/Blue Berry Shake" class="modalImage">
+            <p></p>
+            <h3>Pancit Guisado</h3>
+            <p class="modalText">Mixed with seafood, topped with spring onions</p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+
+          <div class="modalCard">
+            <img src="img/Pancit.jfif" class="modalImage">
+            <p></p>
+            <h3>Pancit Guisado</h3>
+            <p class="modalText">Mixed with seafood, topped with spring onions</p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+
+          <div class="modalCard">
+            <img src="img/Pancit.jfif" class="modalImage">
+            <p></p>
+            <h3>Pancit Guisado</h3>
+            <p class="modalText">Mixed with seafood, topped with spring onions</p>
+            <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
+            <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
+            <p><button>Add to Cart</button></p>
+          </div>
+          <!-- End of Cards for checkout -->
+        </div>
+        
+        <div class="modal-footer">
+          <button class="btn  btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+   </div>
+   <!-- End of Modal for Refreshments cards -->
                     <!-- end of card -->
                     <br>
             <!-- CAFE MENU -->
@@ -326,16 +560,16 @@
         <div class="row">
                 <div class="col-4 col-md card">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                    <img src="chefs/chefs-1.jpg" class="img-fluid"/>
+                    <img src="img/Me.jpg" class="img-fluid"/>
                     <a href="#!">
                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                     </a>
                     </div>
                     <div class="card-body">
                     <h5 class="card-title">Enerio</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#!" class="btn btn-secondary">Button</a>
+                    <p class="card-text">Group member. Responsible in collecting and fomatting of Pictures, inserting them in the Cards. Created the Modals to display different products.</p>
                     </div>
+                    <div class="card-footer"><a href="#!" class="btn btn-secondary">Profile</a></div>
                 </div>
 
                 <div class="col-4 col-md card">
@@ -348,8 +582,8 @@
                     <div class="card-body">
                     <h5 class="card-title">Vanessa</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#!" class="btn btn-secondary">Button</a>
                     </div>
+                    <div class="card-footer"><a href="#!" class="btn btn-secondary">Profile</a></div>
                 </div>
 
                 <div class="col-4 col-md card">
@@ -362,9 +596,8 @@
                     <div class="card-body">
                     <h5 class="card-title">Melvin</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#!" class="btn btn-secondary">Button</a>
                     </div>
-                    
+                    <div class="card-footer"> <a href="#!" class="btn btn-secondary">Profile</a></div>
                 </div>
                 <!-- end of card -->
 
