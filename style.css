@@ -100,3 +100,56 @@ h4 {
 .btn-secondary:hover {
     background-color: rgba(0, 0, 0, 0.493);
 }
+/* Product Category Card Background Color */
+.productModal{
+    background-color:  rgba(83, 45, 4, 0.75);
+}
+.modal-header{
+    background-color:  rgba(83, 45, 4, 0.75);
+    color: whitesmoke;
+}
+.modalCard{
+    background-color: rgba(83, 45, 4, 0.75);
+    max-width: 300px;
+    margin: auto;
+    border:solid, rgba(83, 45, 4, 1);
+    border-radius: 10px;
+    border-style: ridge;
+    text-align: center;
+}
+.modalCard p{
+    color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.modalCard p button {
+    border:none;
+    outline: none;
+    padding:12px;
+    color:whitesmoke;
+    background-color:rgba(83, 45, 4, 1);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 12pt;
+    border-radius: 10px;
+
+}
+.modalImage{
+    width: 200px;
+    height: auto;
+    padding-top:10px;
+    padding-bottom: 4px;
+    
+}
+.modalText{
+     font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+.modalPrice{
+    opacity: .4;
+}
+
+.checkout:hover{
+    opacity: .7;
+}
