@@ -53,7 +53,12 @@
     color: aliceblue;
 }
 
+
+/* */
+    .card:hover {
+=======
 .card:hover {
+
     background-color: #929487;
 
     display:block;
@@ -101,6 +106,9 @@ h4 {
 
 .btn-secondary:hover {
     background-color: rgba(0, 0, 0, 0.493);
+
+}
+=======
 }
 
 /* Product Category Card Background Color */
