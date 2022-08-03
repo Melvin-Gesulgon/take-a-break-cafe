@@ -56,7 +56,7 @@
 .card:hover {
     background-color: #929487;
 
-    display:block;
+    /* display:block; */ /* deactivated - tends to move the button at footer up to the center */
     transform: scale(1.1);
     transform-style:flat;
     transition-delay: 0.4s;
