@@ -1,6 +1,6 @@
 .navbar {
     /* background-color: #6b6054; */
-    background-color: rgba(83, 45, 4, 1);
+    background-color: rgba(83, 45, 4, 0.25);
 }
 .navbar-brand {
     font-family: 'Satisfy', cursive;
@@ -13,6 +13,9 @@
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
 .active {
     /* font-style: italic; */
     color: #929487;
@@ -24,11 +27,23 @@
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+.nav-item, .navbar-brand {
+    transition: 50ms linear;
+}
 .nav-item:hover {
-    background-color: #929487;
+    /* background-color: #929487; */
+    transform: scale(1.25);
 }
 
-.ul li:hover {background: #555;}
+.ul li:hover {
+    background: #555;
+}
+
+
 
 .a:active {
     color: red;
@@ -52,16 +67,18 @@
     font-style: italic;
     color: aliceblue;
 }
+.card-footer{
+    border: none;
+    text-align: center;
+    
+}
 
 
-/* */
-    .card:hover {
-=======
 .card:hover {
 
     background-color: #929487;
 
-    display:block;
+    /* display:block; */ /* deactivated - tends to move the button at footer up to the center */
     transform: scale(1.1);
     transform-style:flat;
     transition-delay: 0.4s;
@@ -107,8 +124,6 @@ h4 {
 .btn-secondary:hover {
     background-color: rgba(0, 0, 0, 0.493);
 
-}
-=======
 }
 
 /* Product Category Card Background Color */
@@ -159,6 +174,26 @@ h4 {
 }
 .modalPrice{
     opacity: .4;
+}
+
+/* Profile pictures */
+.image1 img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 200px;
+    width: 100%;
+}
+.image2 img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 140px;
+    height: 140px;
+    border-radius:50%;
+    border: 7px solid #fff;
+    margin-top: -70px;
 }
 
 .checkout:hover{
