@@ -13,6 +13,9 @@
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
 .active {
     /* font-style: italic; */
     color: #929487;
@@ -59,9 +62,6 @@
 }
 
 
-/* */
-    .card:hover {
-=======
 .card:hover {
 
     background-color: #929487;
