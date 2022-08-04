@@ -1,6 +1,6 @@
 .navbar {
     /* background-color: #6b6054; */
-    background-color: rgba(83, 45, 4, 1);
+    background-color: rgba(83, 45, 4, 0);
 }
 .navbar-brand {
     font-family: 'Satisfy', cursive;
@@ -13,6 +13,9 @@
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
 .active {
     /* font-style: italic; */
     color: #929487;
@@ -22,6 +25,10 @@
     font-family: 'Poppins', sans-serif;
     /* font-family: 'Satisfy', cursive; */
     text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 .nav-item:hover {
@@ -58,7 +65,9 @@
     
 }
 
+
 .card:hover {
+
     background-color: #929487;
 
     /* display:block; */ /* deactivated - tends to move the button at footer up to the center */
@@ -106,6 +115,7 @@ h4 {
 
 .btn-secondary:hover {
     background-color: rgba(0, 0, 0, 0.493);
+
 }
 
 /* Product Category Card Background Color */
