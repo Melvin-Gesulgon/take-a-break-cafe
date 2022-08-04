@@ -48,15 +48,16 @@
           <div class="collapse navbar-collapse ps-13" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active fw-bold fs-4" aria-current="page" href="#">Home</a>
+                <a class="nav-link active fw-bold text-danger" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white fw-bold fs-4" href="#menu">Menu</a>
+                <a class="nav-link text-white" href="#menu">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white fw-bold fs-4" href="#">Specials</a>
+                <a class="nav-link text-white" href="#">Contact</a>
               </li>
               <li class="nav-item">
+
                 <a class="nav-link text-white fw-bold fs-4" href="#">Events</a>
               </li>
               <li class="nav-item">
@@ -70,13 +71,41 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white fw-bold fs-4" href="about.html">About</a>
+=======
+                <a class="nav-link text-white" href="about.html">About</a>
+
               </li>
             </ul>
-            <button type="button" class="btn fs-2 nav-item" ><i class="bi bi-cart nav-link text-white"></i></button>
-            
+
+            <button type="button" class="btn fs-3 nav-item"><i class="bi bi-cart nav-link text-white" data-bs-toggle="modal" data-bs-target="#cart"></i></button>
+              <!-- nav bar cart button with modal trigger -->
+                   
+
           </div>
         </div>
       </nav>
+
+
+            <!-- navbar cart button modal start -->
+      <div class="modal fade" id="cart" tabindex="-1" aria-labelledby="cartLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cartLabel">Your Cart</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go Back</button>
+              <button type="button" class="btn btn-primary"><a href="checkout.html">Proceed to Checkout</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- navbar cart button modal end -->
+
 
                         <!-- CAROUSEL -->
 
@@ -122,7 +151,7 @@
       <!-- end of carousel -->
                 <br><br>
       <div class="container-sm">
-            <h1 class="mainHeader">Why Choose <b>Take A Break</b> Cafe</h1>
+            <h1 class="mainHeader" id="menu">Why Choose <b>Take A Break</b> Cafe</h1>
             <br>
             <p class="mainP d-flex justify-content-center">Take A Break Cafe prides itself for what its brand represents before our 
               valued customers.  Feeling sleepy, drained or just want to Take A Break; Whatever the circumstance,
@@ -157,7 +186,7 @@
                     <p class="card-text">Get the most from a variety of hot and cold coffee drinks, carefully and hygienically prepared.</p>
                 </div>
                 <div class="card-footer">
-                  <button class="button btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target= "#coffeeModal">Kape pa more</button>
+                  <button type="button" class="btn btn-secondary btn-sm " data-bs-toggle="modal" data-bs-target= "#coffeeModal">Kape pa more</button>
                 </div>
             </div>
             <div class="card col-md-4 gx-5">
@@ -181,7 +210,7 @@
                     <!-- <h6 class="card-subtitle mb-2 fs-3 fw-bold">Card subtitle</h6> -->
                     <br>
                     <!-- <p class="card-text">The quick brown fox jumped over the lazy dog under the log.</p> -->
-                    <p class="card-text">Are you ready to stimulate your palate? Indulge in our delectable meals to satisfy your cravings.</p>
+                    <p class="card-text">Are you ready to stimulate your palate? Indulge yourself with our delectable meals to satisfy your cravings.</p>
                 </div>
                 <div class="card-footer">
                   <button class="button btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target= "#breakfastModal">Hukad pa more</button>
@@ -351,7 +380,7 @@
             <img src="img/BreadandBeacon.jfif" class="modalImage">
             <p></p>
             <h3>Bread and Beacon</h3>
-            <p class="modalText">Bread and Beacon makes this light meal best if you don't want to get heavy.</p>
+            <p class="modalText">Bread and Beacon makes this light meal ideal for someone who wants to stay on top of his/her weight loss program.</p>
             <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
             <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
             <p><button>Add to Cart</button></p>
@@ -418,30 +447,30 @@
           </div>
 
           <div class="modalCard">
-            <img src="img/Blue Berry Shake" class="modalImage">
+            <img src="img/BlueBerryMilkShake.jfif" class="modalImage">
             <p></p>
-            <h3>Pancit Guisado</h3>
-            <p class="modalText">Mixed with seafood, topped with spring onions</p>
+            <h3>Blue Berry Shake</h3>
+            <p class="modalText">Increase your immune system with this natural drink</p>
             <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
             <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
             <p><button>Add to Cart</button></p>
           </div>
 
           <div class="modalCard">
-            <img src="img/Pancit.jfif" class="modalImage">
+            <img src="img/FruitYogurtShakes.jfif" class="modalImage">
             <p></p>
-            <h3>Pancit Guisado</h3>
-            <p class="modalText">Mixed with seafood, topped with spring onions</p>
+            <h3>Fruit and Yughort Shake</h3>
+            <p class="modalText">Improve your gut health and your immune system</p>
             <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
             <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
             <p><button>Add to Cart</button></p>
           </div>
 
           <div class="modalCard">
-            <img src="img/Pancit.jfif" class="modalImage">
+            <img src="img/StrawberryMilkShake.jfif" class="modalImage">
             <p></p>
-            <h3>Pancit Guisado</h3>
-            <p class="modalText">Mixed with seafood, topped with spring onions</p>
+            <h3>Strawberry Milk Shake</h3>
+            <p class="modalText">Power up your inner self with this very nutritious drink.</p>
             <p class="modalPrice"><i class="fa-solid fa-peso-sign">30.00</i></p>
             <p><label for="ordqty">Ord Qty:</label>  <input type="number" name="ordqty" style="width:50px;" value="0"></input></p>
             <p><button>Add to Cart</button></p>
@@ -560,7 +589,8 @@
         <div class="row">
                 <div class="col-4 col-md card">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                    <img src="img/Me.jpg" class="img-fluid"/>
+                      <div class="image1"><img src="img/CoffeeBean2.jfif" class="img-fluid"/></div>
+                      <div class="image2"><img src="img/Me.jpg" class="img-fluid"/></div>
                     <a href="#!">
                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                     </a>
@@ -574,7 +604,9 @@
 
                 <div class="col-4 col-md card">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                    <img src="chefs/chefs-2.jpg" class="img-fluid"/>
+                    <!-- <img src="chefs/chefs-2.jpg" class="img-fluid"/> -->
+                      <div class="image1"><img src="img/HalohaloFiesta.jfif" class="img-fluid"/></div>
+                      <div class="image2"><img src="chefs/chefs-2.jpg" class="img-fluid"/></div>
                     <a href="#!">
                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                     </a>
@@ -588,14 +620,16 @@
 
                 <div class="col-4 col-md card">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                    <img src="chefs/chefs-3.jpg" class="img-fluid"/>
+                    <!-- <img src="chefs/chefs-3.jpg" class="img-fluid"/> -->
+                    <div class="image1"><img src="img/Bread.jfif" class="img-fluid"/></div>
+                      <div class="image2"><img src="chefs/chefs-3.jpg" class="img-fluid"/></div>
                     <a href="#!">
                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                     </a>
                     </div>
                     <div class="card-body">
                     <h5 class="card-title">Melvin</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Group Lead. Responsible in creating the structure of this site and providing the guidance to members.</p>
                     </div>
                     <div class="card-footer"> <a href="#!" class="btn btn-secondary">Profile</a></div>
                 </div>
