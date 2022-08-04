@@ -24,6 +24,10 @@
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 .nav-item:hover {
     background-color: #929487;
 }
