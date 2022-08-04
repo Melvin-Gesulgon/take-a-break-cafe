@@ -48,23 +48,11 @@
           <div class="collapse navbar-collapse ps-13" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+                <a class="nav-link active fw-bold text-danger" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#menu">Menu</a>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link text-white" href="#">Specials</a> -->
-              <!-- </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Events</a>
-              </li> -->
-              <!-- <li class="nav-item">
-                <a class="nav-link text-white" href="#chefs">Chefs</a>
-              </li> -->
-              <!-- <li class="nav-item">
-                <a class="nav-link text-white" href="#">Gallery</a>
-              </li> -->
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">Contact</a>
               </li>
@@ -73,10 +61,31 @@
               </li>
             </ul>
             <button type="button" class="btn fs-3 nav-item"><i class="bi bi-cart nav-link text-white" data-bs-toggle="modal" data-bs-target="#cart"></i></button>
-            
+              <!-- nav bar cart button with modal trigger -->
           </div>
         </div>
       </nav>
+
+            <!-- navbar cart button modal start -->
+      <div class="modal fade" id="cart" tabindex="-1" aria-labelledby="cartLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cartLabel">Your Cart</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go Back</button>
+              <button type="button" class="btn btn-primary"><a href="checkout.html">Proceed to Checkout</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- navbar cart button modal end -->
+
 
 
 <!-- Modal -->

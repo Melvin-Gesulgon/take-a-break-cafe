@@ -1,6 +1,6 @@
 .navbar {
     /* background-color: #6b6054; */
-    background-color: rgba(83, 45, 4, 0);
+    background-color: rgba(83, 45, 4, 0.25);
 }
 .navbar-brand {
     font-family: 'Satisfy', cursive;
@@ -26,6 +26,7 @@
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 .nav-item:hover {
