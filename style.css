@@ -70,10 +70,16 @@ a {
 .card-footer{
     border: none;
     text-align: center;
+    background: none;
     
 }
+.card-footer {
+    transition: 50ms linear;
+}
 
-
+.card-footer:hover {
+    transform: scale(1.20);
+}
 .card:hover {
 
     background-color: #929487;
