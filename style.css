@@ -1,6 +1,6 @@
 .navbar {
     /* background-color: #6b6054; */
-    background-color: rgba(83, 45, 4, 0);
+    background-color: rgba(83, 45, 4, 0.25);
 }
 .navbar-brand {
     font-family: 'Satisfy', cursive;
@@ -29,13 +29,21 @@ a {
 
 a {
     text-decoration: none;
+    color: white;
 }
-
+.nav-item, .navbar-brand {
+    transition: 50ms linear;
+}
 .nav-item:hover {
-    background-color: #929487;
+    /* background-color: #929487; */
+    transform: scale(1.25);
 }
 
-.ul li:hover {background: #555;}
+.ul li:hover {
+    background: #555;
+}
+
+
 
 .a:active {
     color: red;
@@ -62,10 +70,16 @@ a {
 .card-footer{
     border: none;
     text-align: center;
+    background: none;
     
 }
+.card-footer {
+    transition: 50ms linear;
+}
 
-
+.card-footer:hover {
+    transform: scale(1.20);
+}
 .card:hover {
 
     background-color: #929487;
@@ -197,4 +211,4 @@ h4 {
 .btn-group-vertical>.btn:not(:first-child),.btn-group-vertical>.btn-group:not(:first-child) {
             margin-top: 0;
             }
-
+   
