@@ -209,7 +209,7 @@ h4 {
 .carousel-img {
     object-fit: cover;
     object-position: center;
-    height: 75vh;
+    height: 85vh;
     overflow: hidden;
 }
 
