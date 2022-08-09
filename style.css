@@ -210,9 +210,19 @@ h4 {
     opacity: .7;
 }
 
+.carousel-img {
+    object-fit: cover;
+    object-position: center;
+    height: 85vh;
+    overflow: hidden;
+}
+
             /* checkout page classes */
 
 .btn-group-vertical>.btn:not(:first-child),.btn-group-vertical>.btn-group:not(:first-child) {
             margin-top: 0;
             }
-   
+
+            .footer:hover{
+                opacity: .7;
+            }

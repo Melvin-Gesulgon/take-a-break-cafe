@@ -51,21 +51,85 @@
               <li class="nav-item">
                 <a class="nav-link active text-white"  href="index.html">Home</a>
               <li class="nav-item">
-                <a class="nav-link active"  href="about.html">About</a>
+                <a class="nav-link text-white"  href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-danger" aria-current="page" href="contact.html">Contact</a>
+                <a class="nav-link text-danger fw-bold" aria-current="page" href="contact.html">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="checkout.html">Checkout</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="bi bi-cart fs-4 text-white"></i></a>
+                <a class="nav-link" href="#"><i class="bi bi-cart fs-4 text-white" data-bs-toggle="modal" data-bs-target="#cart"></i></a>
               </li>
             </ul>
         </div>  
       </nav>
     </div>
+
+                <!-- navbar cart button modal start -->
+                <div class="modal fade" id="cart" tabindex="-1" aria-labelledby="cartLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="cartLabel">My Cart</h5>
+                        <a data-bs-dismiss="modal" aria-label="Close" href="#"><i class="bi bi-x-circle text-end fs-3"></i></a>
+                      </div>
+                     
+                      <div class="modal-body">
+                          <div class="row border border-secondary mx-2">
+                            <div class="col-md-2 py-3"> <img src="https://picsum.photos/200" alt="" height="75px" width="auto"> </div>
+                            <div class="col-md-4 text-left align-baseline fs-2">product 1</div>
+                            <div class="col-1"><h2>$20</h2></div>
+                            <div class="col-md-3">
+                                <div class="input-group input-group-lg">
+                                  <div class="input-group-prepend">
+                                    <!-- <span class="input-group-text" id="inputGroup-sizing-lg"></span> -->
+                                  </div>
+                                  <input type="number" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                </div>
+                            </div>
+                            <div class="col-1"><h2>$20</h2></div>
+                            <div class="col-md-1"><i class="bi bi-x-square fs-3 text-right"></i></div>
+                          </div>
+          
+                          <div class="row border border-secondary mx-2">
+                            <div class="col-md-2 py-3"> <img src="https://picsum.photos/200" alt="" height="75px" width="auto"> </div>
+                            <div class="col-md-4 text-left align-baseline fs-2">product 1</div>
+                            <div class="col-1"><h2>$20</h2></div>
+                            <div class="col-md-3">
+                                <div class="input-group input-group-lg">
+                                  <div class="input-group-prepend">
+                                    <!-- <span class="input-group-text" id="inputGroup-sizing-lg"></span> -->
+                                  </div>
+                                  <input type="number" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                </div>
+                            </div>
+                            <div class="col-1"><h2>$20</h2></div>
+                            <div class="col-md-1"><i class="bi bi-x-square fs-3 text-right"></i></div>
+                          </div>
+                          
+                          <div class="row border border-secondary mx-2">
+                            <div class="col-md-2 py-3"></div>
+                            <div class="col-md-4 text-left align-baseline fs-2"> <h2>Total</h2> </div>
+                            <div class="col-1"><h2></h2></div>
+                            <div class="col-md-3">
+                                
+                            </div>
+                            <div class="col-1"><h2>$40</h2></div>
+                            <div class="col-md-1"></div>
+                          </div>
+          
+          
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go Back</button>
+                        <button type="button" class="btn btn-primary"><a href="checkout.html">Proceed to Checkout</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <!-- navbar cart button modal end -->
 
     <div class="container-fluid mt-5">
         
@@ -129,11 +193,13 @@
     </div>
     </div>
     
-    <footer class="container pt-5 mb-5 mt-5 d-flex justify-content-center">
+    <footer>
+
+    <div class="container pt-5 mb-5 mt-5 d-flex justify-content-center">
       
       <h4 class="text-center me-3">FOLLOW US</h4>
 
-    <h4 class="text-center">
+    <h4 class="text-center"> 
       <i class="bi bi-facebook px-1"></i>
       <i class="bi bi-instagram px-1"></i>
       <i class="bi bi-twitter px-1"></i>
