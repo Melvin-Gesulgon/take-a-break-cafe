@@ -7,6 +7,11 @@
     color: white;
 }
 
+.nav-item {
+    border-radius: 16px;
+    padding-right: 7px;
+}
+
 .mainHeader {
     font-family: 'Satisfy', cursive;
     /* font-family: 'Lora', serif; */
