@@ -56,10 +56,18 @@ a {
     margin-left: 1px;
     margin-right: 1px;
     max-width:400px;
+    /* transition: width 2s ease; */
     /* border: solid rgb(61, 32, 1); */
     /* box-shadow: -5px 5px 17px 9px rgba(97,92,92,0.62);
 -webkit-box-shadow: -5px 5px 17px 9px rgba(97,92,92,0.62);
 -moz-box-shadow: -5px 5px 17px 9px rgba(97,92,92,0.62); */
+/* -webkit-user-select: none; */
+    /* width: 25%; */
+    -webkit-transition: transform .5s;
+    transform-origin: center;
+    z-index: 0;
+    vertical-align: top;
+    transition:all 1s;
 }
 .card-body p {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -83,12 +91,12 @@ a {
 .card:hover {
 
     background-color: #929487;
-
-    /* display:block; */ /* deactivated - tends to move the button at footer up to the center */
+        /* display:block; */ /* deactivated - tends to move the button at footer up to the center */
     transform: scale(1.1);
-    transform-style:flat;
+    /* transform-style:flat; */
     transition-delay: 0.4s;
-    transition-duration: 0.8s;
+    /* transition-duration: 0.5s; */
+    transition: all 1s;
     z-index: 5;
 
 }
@@ -146,7 +154,7 @@ h4 {
 }
 .modalCard{
     background-color: rgba(83, 45, 4, 0.75);
-    max-width: 300px;
+    max-width: 400px;
     margin: auto;
     border:solid, rgba(83, 45, 4, 1);
     border-radius: 10px;
