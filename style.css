@@ -134,7 +134,9 @@ h4 {
     /* font-weight: bolder; */
     align-items: center;
 }
-
+.text-justify{
+    text-align:justify ;
+}
 .footerAttr {
     
     font-family: 'Poppins', sans-serif;
