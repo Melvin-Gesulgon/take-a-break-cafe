@@ -1,4 +1,9 @@
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-// $secondary: orange; 
+$secondary: rgba(187, 170, 152, 0.5); 
+$primary: rgba(83, 45, 4, 1);
+$info: rgb(224, 167, 9);
 // for changing deault classsettings in bs
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import"../node_modules/bootstrap/scss/functions";
+@import"../node_modules/bootstrap/scss/variables";
