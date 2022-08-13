@@ -27,7 +27,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
 
                 <!-- ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
                 <!-- STYLESHEET -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -131,6 +132,7 @@
               <!-- navbar cart button modal end -->
               
       <!-- start of checkout card -->
+<<<<<<< Updated upstream
       <br><br>
 
       <div class="container-fluid mt-5 pt-5">
@@ -235,8 +237,186 @@
               </div>
             </div>
           </section>
+=======
+       <!-- start of checkout card -->
+       <br><br>
+       <div class="container checkout-container mt-5">
+        
+        <div class="row">
+          <div class="col-md-8">
+            <h3>Getting your order</h3>
+            <hr>
+          </div>
+          <div class="col-md-4">
+            <h3>Order Summary</h3>
+          </div>
+>>>>>>> Stashed changes
         </div>
-      <!-- end of checkout card -->
+
+        <div class="row">
+          <!-- user personal information area -->
+              <div class="col-md-8">
+                <div class="container" id="checkout-personal-info d-flex align-content-end">
+                <h4 class="fs-4">Shipping Information</h4> 
+                <br>
+                <div class="col-md-4">
+                  <h4 class="fs-5">First Name</h4>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                
+                <div class="col-md-4">
+                <input class="form-control" type="text">
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+      
+                <div class="col-md-4">
+                  <h4 class="fs-5">Last Name</h4>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                
+                <div class="col-md-4">
+                <input class="form-control" type="text">
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                
+                <div class="col-md-4">
+                  <h4 class="fs-5">Address</h4>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                
+                <div class="col-md-4">
+                <input class="form-control" type="text">
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                  <h4 class="fs-5">City</h4>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                
+                <div class="col-md-4">
+                <input class="form-control" type="text">
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                
+                <div class="col-md-4">
+                  <h4 class="fs-5">Province</h4>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                
+                <div class="col-md-4">
+                <input class="form-control" type="text">
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+              </div>
+            </div>
+              <!-- end of user information area -->
+
+            
+
+                <!--  breakdown of items in cart -->
+              <div class="col-md-4">
+                <div class="container border border-2 border-dark" id="cart-items-info">
+                   <div><h4>Shipping</h4></div>
+                   <div class="d-flex justify-content-between">
+                    <img src="https://picsum.photos/100" alt="">
+                    <p class="px-3">Lorem ipsum dolor sit amet.</p>
+                    <h4>₱100.00</h4>
+                   </div>
+                  
+                   <div class="d-flex justify-content-between mt-4">
+                    <img src="https://picsum.photos/100" alt="">
+                    <p class="px-3">Lorem ipsum dolor sit amet.</p>
+                    <h4>₱100.00</h4>
+                   </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                      <p>Item Subtotal</p>
+                      <p>₱200.00</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p>Shipping</p>
+                      <p>FREE</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p>E-VAT</p>
+                      <p>₱20</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                      <p class="fw-bold">Total</p>
+                      <p class="fw-bold">₱220</p>
+                    </div>
+
+                </div>
+              </div>
+            
+            <div class="row">
+
+            </div>
+
+          <br><br><br>
+
+          <hr>
+          <br>
+              <!-- Contact Information -->
+          <div class="col-md-6">
+            <h3 class="fs-4">Contact Information</h3>
+            <br>
+            <h4>Email Address</h4 >
+            <input type="email" class="form-control">
+            <h4>Phone Number</h4 >
+            <input type="tel" class="form-control">
+            <!-- <h4>Mode of Payment</h4> -->
+
+            <!-- <form class="form-control" action="#"> -->
+            <!-- <label for="cars">Select Mode of Payment:</label> -->
+            <br>
+            <form>
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fs-3 fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fs-3 fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fs-3 fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fs-3 fa fa-cc-discover" style="color:orange;"></i>
+                <br><br>
+              <label class="fs-" for="payment">Mode of Payment:</label>
+              <select  class="form-select" id="payment" name="payment">
+                <option value="VISA" selected>VISA</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="American Express">American Express</option>
+                <option value="Bitcoin">Bitcoin</option>
+                <option value="COD">Cash on Delivery</option>
+              </select>
+            </form>
+
+
+            </div>
+
+              <br>
+              <form action="">
+                <h4>Card Number</h4 >
+                <input type="tel" class="form-control">
+              </form>
+            
+            
+                <br>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-primary" type="button">PAY NOW</button>
+          <!-- </div> -->
+         
+        </div>
+        <!-- end of checkout card -->
 
       <div class="container d-flex flex-wrap footerHeight">
         <footer class="row d-flex flex-nowrap text-center ">
@@ -252,7 +432,12 @@
        </div>
 
 
+<<<<<<< Updated upstream
       <!-- <footer class="container row">
+=======
+
+      <footer class="container row mt-5">
+>>>>>>> Stashed changes
         <div class="col-6 d-flex justify-content-end">
               <h4>Follow us</h4>
         </div>
