@@ -67,69 +67,62 @@
     </div>  
   </nav>
 
-            <!-- navbar cart button modal start -->
-            <div class="modal fade" id="cart" tabindex="-1" aria-labelledby="cartLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="cartLabel">My Cart</h5>
-                    <a data-bs-dismiss="modal" aria-label="Close" href="#"><i class="bi bi-x-circle text-end fs-3"></i></a>
-                  </div>
-                 
-                  <div class="modal-body">
-                      <div class="row border border-secondary mx-2">
-                        <div class="col-md-2 py-3"> <img src="https://picsum.photos/200" alt="" height="75px" width="auto"> </div>
-                        <div class="col-md-4 text-left align-baseline fs-2">product 1</div>
-                        <div class="col-1"><h2>₱ 200.00</h2></div>
-                        <div class="col-md-3">
-                            <div class="input-group input-group-lg">
-                              <div class="input-group-prepend">
-                                <!-- <span class="input-group-text" id="inputGroup-sizing-lg"></span> -->
-                              </div>
-                              <input type="number" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-                            </div>
+         <!-- navbar cart button modal start -->
+      <div class="modal fade" id="cart" tabindex="-1" aria-labelledby="cartLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cartLabel">My Cart</h5>
+              <a data-bs-dismiss="modal" aria-label="Close" href="#"><i class="bi bi-x-circle text-end fs-3"></i></a>
+            </div>
+           
+            <div class="modal-body">
+                  <!-- cart items -->
+                <div class="row border border-secondary mx-2">
+                  <div class="col-md-3 py-3"> <img src="img/Tapsilog.jfif" alt="" height="auto" width="100px"> </div>                
+                  <div class="col-md-2 text-left align-baseline my-auto"><h4>Tapsilog</h4></div>                 
+                  <div class="col-md-7 my-auto">                      
+                        <div class="input-group input-group-lg d-flex justify-content-between my-auto">
+                          <div class="input-group-prepend"></div>
+                            <i class="bi bi-dash-square fs-3 my-3"></i>
+                            <button class="btn btn-primary rounded my-3" type="button">0</button>
+                            <i class="bi bi-plus-square fs-3 my-3"></i>
+                            <h5 class="my-3">₱100</h5>
+                            <i class="bi bi-x-square fs-3 text-right my-3"></i>                      
                         </div>
-                        <div class="col-1"><h2>₱ 150.00</h2></div>
-                        <div class="col-md-1"><i class="bi bi-x-square fs-3 text-right"></i></div>
-                      </div>
-      
-                      <div class="row border border-secondary mx-2">
-                        <div class="col-md-2 py-3"> <img src="https://picsum.photos/200" alt="" height="75px" width="auto"> </div>
-                        <div class="col-md-4 text-left align-baseline fs-2">product 1</div>
-                        <div class="col-1"><h2>₱ 200.00</h2></div>
-                        <div class="col-md-3">
-                            <div class="input-group input-group-lg">
-                              <div class="input-group-prepend">
-                                <!-- <span class="input-group-text" id="inputGroup-sizing-lg"></span> -->
-                              </div>
-                              <input type="number" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-                            </div>
-                        </div>
-                        <div class="col-1"><h2>₱ 250.00</h2></div>
-                        <div class="col-md-1"><i class="bi bi-x-square fs-3 text-right"></i></div>
-                      </div>
-                      
-                      <div class="row border border-secondary mx-2">
-                        <div class="col-md-2 py-3"></div>
-                        <div class="col-md-4 text-left align-baseline fs-2"> <h2>Total</h2> </div>
-                        <div class="col-1"><h2></h2></div>
-                        <div class="col-md-3">
-                            
-                        </div>
-                        <div class="col-1"><h2>₱ 300.00</h2></div>
-                        <div class="col-md-1"></div>
-                      </div>
-      
-      
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go Back</button>
-                    <button type="button" class="btn btn-primary"><a href="checkout.html">Proceed to Checkout</a></button>
                   </div>
                 </div>
-              </div>
+
+                <div class="row border border-secondary mx-2">
+                  <div class="col-md-3 py-3"> <img src="img/KiwiFruitShake.jfif" alt="" height="auto" width="100px"> </div>                
+                  <div class="col-md-2 text-left align-baseline my-auto"><h4>Kiwi Smoothie</h4></div>                 
+                  <div class="col-md-7 my-auto">                      
+                        <div class="input-group input-group-lg d-flex justify-content-between my-auto">
+                          <div class="input-group-prepend"></div>
+                            <i class="bi bi-dash-square fs-3 my-3"></i>
+                            <button class="btn btn-primary rounded my-3" type="button">0</button>
+                            <i class="bi bi-plus-square fs-3 my-3"></i>
+                            <h5 class="my-3">₱125</h5>
+                            <i class="bi bi-x-square fs-3 text-right my-3"></i>                      
+                        </div>
+                  </div>
+                </div>
+
+                <!-- cart total -->
+                <div class="row border border-secondary mx-2">
+                  <div class="col-md-6 d-flex justify-content-between"> <h3>Total</h3> </div>      
+                  <div class="col-md-6 d-flex justify-content-end pe-5 text-danger"><h5>₱225</h5></div>
+                </div>
             </div>
-              <!-- navbar cart button modal end -->
+                        <!-- modal buttons -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go Back</button>
+              <button type="button" class="btn btn-primary"><a href="checkout.html">Proceed to Checkout</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- navbar cart button modal end -->
               
       <br><br>   
 
