@@ -125,7 +125,9 @@ a {
     color:rgb(255, 233, 210);
 }
     
-    
+h1 {
+    font-family: Lora, serif;
+}
 
 h4 {
     
@@ -248,6 +250,11 @@ h4 {
     height: 85vh;
     overflow: hidden;
 }
+
+/* .checkout-img {
+    width: px;
+    height: auto;
+} */
 
             /* checkout page classes */
 
