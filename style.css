@@ -258,9 +258,9 @@ h4 {
 
             /* checkout page classes */
 
-.btn-group-vertical>.btn:not(:first-child),.btn-group-vertical>.btn-group:not(:first-child) {
+/* .btn-group-vertical>.btn:not(:first-child),.btn-group-vertical>.btn-group:not(:first-child) {
             margin-top: 0;
-            }
+            } */
 
             .footer:hover{
                 opacity: .7;
